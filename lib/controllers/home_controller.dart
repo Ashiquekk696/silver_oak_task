@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/get.dart';
-import '../models/my_grid_model.dart';
-import '../services/my_home_service.dart';
+import '../models/home_model.dart';
+import '../services/home_service.dart';
 
-class MyHomeController extends GetxController {
-  MyHomeService myGridService = MyHomeService();
+class HomeController extends GetxController {
+  HomeService myGridService = HomeService();
   var isLoading = false.obs;
     var isPageUpdating = false.obs;
   var currentPage = 1.obs;
-  late var gridData = <MyGridModel>[].obs;
+  late var gridData = <HomeModel>[].obs;
   final ScrollController scrollController = ScrollController();
 
   @override

@@ -3,11 +3,11 @@ import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:silver_oak_test/constants/text_style.dart';
 
-import '../controllers/my_home_controller.dart';
-import '../models/my_grid_model.dart';
+import '../controllers/home_controller.dart';
+import '../models/home_model.dart';
 
-class MyGridView extends GetView {
-  var controller = Get.put<MyHomeController>(MyHomeController());
+class HomeView extends GetView {
+  var controller = Get.put<HomeController>(HomeController());
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class MyGridView extends GetView {
                         mainAxisSpacing: 8,
                       ),
                       itemBuilder: (context, index) {
-                        final MyGridModel item = controller.gridData[index];
+                        final HomeModel item = controller.gridData[index];
                         return ClipRRect(
                           borderRadius: BorderRadius.circular(5),
                           child: Image.network(

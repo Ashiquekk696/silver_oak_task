@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:silver_oak_test/constants/colors.dart';
 
-import 'views/my_home_view.dart';
+import 'views/home_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
           useMaterial3: true, scaffoldBackgroundColor: AppColors.black),
-      home: MyGridView(),
+      home: HomeView(),
     );
   }
 }

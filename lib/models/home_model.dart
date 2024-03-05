@@ -1,5 +1,5 @@
  
-class MyGridModel {
+class HomeModel {
   String? id;
   String? slug;
   String? createdAt;
@@ -17,7 +17,7 @@ class MyGridModel {
   List<Null>? currentUserCollections;
   Sponsorship? sponsorship;
 
-  MyGridModel(
+  HomeModel(
       {this.id,
       this.slug,
       this.createdAt,
@@ -35,7 +35,7 @@ class MyGridModel {
       this.currentUserCollections,
       this.sponsorship});
 
-  MyGridModel.fromJson(Map<String, dynamic> json) {
+  HomeModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     slug = json['slug'];
     createdAt = json['created_at'];
